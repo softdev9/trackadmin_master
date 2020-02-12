@@ -1,4 +1,12 @@
-module.exports = function override(config, env) {
-    //do stuff with the webpack config...
-    return config;
-  }
+const {
+    override,
+    fixBabelImports,
+    addLessLoader,
+    useEslintRc,
+    addDecoratorsLegacy,
+  } = require('customize-cra')
+
+module.exports = override(
+    addDecoratorsLegacy(),
+    useEslintRc(),
+)

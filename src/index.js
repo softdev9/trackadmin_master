@@ -9,15 +9,20 @@ import * as serviceWorker from './serviceWorker';
 import { createStore, applyMiddleware, compose} from 'redux';
 import thunk from 'redux-thunk';
 import { createHashHistory } from 'history';
+import Localization from 'components/Layout/Localization';
 
 
 const history = createHashHistory
 const middlewares = [thunk]
-
+if (process.env.NODE_ENV === 'development' && true) {
+  middlewares.push(logger)
+}
 const store = createStore(reducers(history), compose(applyMiddleware(...middlewares)))
 ReactDOM.render(
     <Provider store={store}>
-        <App />
+        <Localization>
+            <App />
+        </Localization>
     </Provider>,
     document.getElementById('root')
 );

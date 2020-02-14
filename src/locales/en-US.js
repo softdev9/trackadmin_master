@@ -1,5 +1,8 @@
 import antdData from 'antd/lib/locale-provider/en_US'
-import localeData from 'react-intl/locale-data/en'
+// import localeData from 'react-intl/locale-data/en'
+
+import '@formatjs/intl-relativetimeformat/polyfill';
+import '@formatjs/intl-relativetimeformat/dist/locale-data/en';
 
 const messages = {
   'topBar.issuesHistory': 'Issues History',
@@ -19,6 +22,6 @@ const messages = {
 export default {
   locale: 'en-US',
   antdData,
-  localeData,
+  // localeData,
   messages,
 }

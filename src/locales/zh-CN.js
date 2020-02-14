@@ -1,4 +1,6 @@
-import localeData from 'react-intl/locale-data/zh'
+// import localeData from 'react-intl/locale-data/zh'
+import '@formatjs/intl-relativetimeformat/polyfill';
+import '@formatjs/intl-relativetimeformat/dist/locale-data/zh';
 
 const messages = {
   'topBar.issuesHistory': '发布历史',
@@ -18,6 +20,6 @@ const messages = {
 export default {
   locale: 'zh-CH',
   antdData: null,
-  localeData,
+  // localeData,
   messages,
 }

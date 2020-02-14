@@ -1,13 +1,8 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import '~bootstrap-css-only/css/bootstrap.min.css';
+@import 'assets/styles/Antd/antd.cleanui';
+@import 'assets/styles/CleanUI/cleanui';
+@import 'assets/styles/Bootstrap/bootstrap.cleanui';
+@import 'assets/styles/Chartist/chartist.cleanui';
+@import 'assets/styles/Nprogress/nprogress.cleanui';
+@import 'assets/styles/Rcdrawer/rcdrawer.cleanui';
+@import '~c3/c3.min.css';

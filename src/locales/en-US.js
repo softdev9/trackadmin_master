@@ -1,8 +1,8 @@
 import antdData from 'antd/lib/locale-provider/en_US'
 // import localeData from 'react-intl/locale-data/en'
 
-import '@formatjs/intl-relativetimeformat/polyfill';
-import '@formatjs/intl-relativetimeformat/dist/locale-data/en';
+import '@formatjs/intl-pluralrules/polyfill';
+import '@formatjs/intl-pluralrules/dist/locale-data/en'; // locale-data for en
 
 const messages = {
   'topBar.issuesHistory': 'Issues History',

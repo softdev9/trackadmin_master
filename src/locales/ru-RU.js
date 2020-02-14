@@ -1,7 +1,7 @@
 import antdData from 'antd/lib/locale-provider/ru_RU'
 // import localeData from 'react-intl/locale-data/ru'
-import '@formatjs/intl-relativetimeformat/polyfill';
-import '@formatjs/intl-relativetimeformat/dist/locale-data/ru';
+import '@formatjs/intl-pluralrules/polyfill';
+import '@formatjs/intl-pluralrules/dist/locale-data/ru'; // locale-data for ru
 
 const messages = {
   'topBar.issuesHistory': 'История заданий',

@@ -1,6 +1,6 @@
 // import localeData from 'react-intl/locale-data/zh'
-import '@formatjs/intl-relativetimeformat/polyfill';
-import '@formatjs/intl-relativetimeformat/dist/locale-data/zh';
+import '@formatjs/intl-pluralrules/polyfill';
+import '@formatjs/intl-pluralrules/dist/locale-data/zh'; // locale-data for zh
 
 const messages = {
   'topBar.issuesHistory': '发布历史',

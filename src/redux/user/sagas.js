@@ -51,24 +51,37 @@ export function* LOAD_CURRENT_ACCOUNT() {
     type: 'user/SET_STATE',
     payload: {
       loading: false,
+        id : '1VSWIDLWI203D0X3SKD20DSJ2',
+        name: 'Administrator',
+        email: 'savenkodesign@gmail.com',
+        avatar: '',
+        role: 'admin',
+        authorized: true,
+
     },
   })
 }
 
 export function* LOGOUT() {
-  yield call(logout)
-  yield put({
-    type: 'user/SET_STATE',
-    payload: {
-      id: '',
-      name: '',
-      role: '',
-      email: '',
-      avatar: '',
-      authorized: false,
-      loading: false,
-    },
-  })
+  const success = yield call(logout)
+  if (success) {
+    notification.success({
+      message: 'Logged Out',
+      description: 'You have successfully logged out to Track Admin!',
+    })
+    yield put({
+      type: 'user/SET_STATE',
+      payload: {
+        id: '',
+        name: '',
+        role: '',
+        email: '',
+        avatar: '',
+        authorized: false,
+        loading: false,
+      },
+    })
+  }
 }
 
 export default function* rootSaga() {

@@ -1,13 +1,13 @@
 import React from 'react'
-import { /*BackTop,*/ Layout } from 'antd'
+import { BackTop, Layout } from 'antd'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
 import classNames from 'classnames'
-// import TopBar from 'components/LayoutComponents/TopBar'
-// import Menu from 'components/LayoutComponents/Menu'
-// import Footer from 'components/LayoutComponents/Footer'
-// import Breadcrumbs from 'components/LayoutComponents/Breadcrumbs'
-// import Settings from 'components/LayoutComponents/Settings'
+import TopBar from 'components/Layout/TopBar'
+// import Menu from 'components/Layout/Menu'
+// import Footer from 'components/Layout/Footer'
+// import Breadcrumbs from 'components/Layout/Breadcrumbs'
+// import Settings from 'components/Layout/Settings'
 
 const mapStateToProps = ({ settings }) => ({
   isBorderless: settings.isBorderless,
@@ -39,21 +39,21 @@ class MainLayout extends React.PureComponent {
           settings__menuTop: isMenuTop,
         })}
       >
-        {/* <BackTop />
-        <Menu />
-        <Settings />
+        <BackTop />
+        {/* <Menu />
+        <Settings /> */}
         <Layout>
           <Layout.Header>
             <TopBar />
           </Layout.Header>
-          <Layout.Content style={{ height: '100%', position: 'relative' }}>
+          {/* <Layout.Content style={{ height: '100%', position: 'relative' }}>
             <Breadcrumbs />
             <div className="utils__content">{children}</div>
           </Layout.Content>
           <Layout.Footer>
             <Footer />
-          </Layout.Footer>
-        </Layout> */}
+          </Layout.Footer> */}
+        </Layout>
       </Layout>
     )
   }

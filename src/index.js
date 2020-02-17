@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { logger } from 'redux-logger';
-import './index.scss';
+import './global.scss';
 import App from './App';
 import reducers from './redux/reducers';
 import * as serviceWorker from './serviceWorker';

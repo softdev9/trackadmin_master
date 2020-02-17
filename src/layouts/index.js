@@ -58,9 +58,7 @@ class IndexLayout extends React.PureComponent {
 
     const Container = Layouts[getLayout()]
     const isUserAuthorized = user.authorized
-    // const isUserAuthorized = false
     const isUserLoading = user.loading
-    // const isUserLoading = false
     const isLoginLayout = getLayout() === 'login'
 
     const BootstrappedLayout = () => {

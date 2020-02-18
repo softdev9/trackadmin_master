@@ -61,6 +61,7 @@ class IndexLayout extends React.PureComponent {
     const isUserLoading = user.loading
     const isLoginLayout = getLayout() === 'login'
 
+    console.log(`Authorized: ${isUserAuthorized}`)
     const BootstrappedLayout = () => {
       // show loader when user in check authorization process, not authorized yet and not on login pages
       if (isUserLoading && !isUserAuthorized && !isLoginLayout) {

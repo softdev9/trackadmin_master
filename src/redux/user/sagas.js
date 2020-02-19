@@ -18,7 +18,17 @@ export function* LOGIN({ payload }) {
       description: 'You have successfully logged in to Clean UI React Admin Template!',
     })
     yield put({
-      type: 'user/LOAD_CURRENT_ACCOUNT',
+        type: 'user/SET_STATE',
+        payload: {
+          loading: false,
+            id : '1VSWIDLWI203D0X3SKD20DSJ2',
+            name: 'Administrator',
+            email: 'savenkodesign@gmail.com',
+            avatar: '',
+            role: 'admin',
+            authorized: true,
+    
+        },
     })
   }
 }

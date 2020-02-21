@@ -5,11 +5,11 @@ import 'firebase/database'
 import 'firebase/storage'
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyAE5G0RI2LwzwTBizhJbnRKIKbiXQIA1dY',
-  authDomain: 'cleanui-72a42.firebaseapp.com',
-  databaseURL: 'https://cleanui-72a42.firebaseio.com',
-  projectId: 'cleanui-72a42',
-  storageBucket: 'cleanui-72a42.appspot.com',
+  apiKey: 'AIzaSyBI7G4BVr-dZbFZ8AhMn97L0bJTkKLdSgM',
+  authDomain: 'ml-app-dev-46e2b.firebaseapp.com/',
+  databaseURL: 'https://ml-app-dev-46e2b.firebaseio.com/',
+  projectId: 'ml-app-dev-46e2b',
+  storageBucket: 'ml-app-dev-46e2b.appspot.com',
   messagingSenderId: '583382839121',
 }
 
